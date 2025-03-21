@@ -1,4 +1,5 @@
 // vars/helloWorld.groovy
-def call(String name = 'User') {
-    echo "Hello, ${name}! Welcome to Jenkins Shared Library."
+def call(Map config = [:] {
+    echo "Hello, ${config.name}! Welcome to Jenkins Shared Library."
+    echo "Today is ${config.dayOfweek}.
 }
